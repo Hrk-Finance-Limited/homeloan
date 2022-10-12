@@ -1,0 +1,38 @@
+package com.hrk.HrkFinanceLimited.app.main.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.hrk.HrkFinanceLimited.app.main.Service.FinanceService;
+import com.hrk.HrkFinanceLimited.app.main.model.EnquiryDetails;
+
+@RestController
+public class FinanceController {
+	
+	@Autowired
+	FinanceService fs;
+
+	@PostMapping("/saveEnquiry")
+	public ResponseEntity<EnquiryDetails> SaveEnquiry(@RequestBody EnquiryDetails ed){
+		
+	EnquiryDetails  enquiryDetails	=fs.SaveEnquiry(ed);
+	return new ResponseEntity<EnquiryDetails>(enquiryDetails,HttpStatus.OK);
+		
+		
+	}
+	
+	@GetMapping("/getEnquiry/{cId}")
+	public ResponseEntity<List<EnquiryDetails>> getEnquiry(@PathVariable Integer cId){
+		return ;
+		
+		
+	}
+}

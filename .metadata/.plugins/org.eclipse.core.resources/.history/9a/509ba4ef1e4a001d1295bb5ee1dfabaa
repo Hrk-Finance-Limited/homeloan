@@ -1,0 +1,9 @@
+package com.hrk.HrkFinanceLimited.app.main.financeRepository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.hrk.HrkFinanceLimited.app.main.model.EnquiryDetails;
+
+public interface EnquiryDetailsRepository extends JpaRepository<EnquiryDetails, Integer> {
+
+}

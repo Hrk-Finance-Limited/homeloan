@@ -1,0 +1,8 @@
+package com.hrk.HrkFinanceLimited.app.main.ServiceImpl;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class FinanceServiceImpl {
+
+}

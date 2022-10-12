@@ -1,0 +1,11 @@
+package com.hrk.HrkFinanceLimited.app.main.Service;
+
+import com.hrk.HrkFinanceLimited.app.main.model.EnquiryDetails;
+
+public interface FinanceService {
+
+	EnquiryDetails SaveEnquiry(EnquiryDetails ed);
+
+	EnquiryDetails getEnquiry(Integer cId);
+
+}

@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+D:\HrkFinance\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1737162743.index
+3389778000.index
+2401807891.index
+1208535189.index
+2416156109.index
